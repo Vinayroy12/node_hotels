@@ -1,0 +1,37 @@
+// const express = require('express')
+// const app = express();
+// const db = require('./db')
+
+// //body parser is the niddleware
+// const bodyParser = require('body-parser');
+// app.use(bodyParser.json());// it converts the json data into object and get stored in req.body
+
+// const Person = require('./models/Person');
+
+
+// app.get('/',  (req,res)=>{
+//     res.send('welcome to my hotel')
+// })
+// // post route to add person data
+// app.post('./person', (req,res)=>{
+//     const data = req.body // req.body contain the person data and we stored it in data
+   
+//     // creating a new peron with the  above data using mongoose person model;
+//     const newPerson = new Person(data) // all the data feilds come too newPerson now save it in database
+//     // save funnction return callback // but now a days we avoid callback and uses async and await
+//     newPerson.save((error,savedPerson)=>{
+//         if(error){
+//             console.log('error saving person:',error);
+//             res.status(500).json({error:'internal server error'})
+//         }else{
+//              console.log('data saved successfully');
+//              res.status(200).json(savedPerson);
+//         }
+//         // now a days we dont use this but we use asyn await eith try and catch
+//     })
+// })
+
+
+// app.listen(3000,()=>{
+//     console.log('server is running')
+// });
